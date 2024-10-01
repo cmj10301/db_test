@@ -1,0 +1,32 @@
+/* ListItem.module.css */
+.listBg {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 각 리스트 아이템 간의 간격 */
+}
+
+.listItem {
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    padding: 15px;
+    border: 1px solid #ddd; /* 테두리 추가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    background-color: #f9f9f9; /* 배경색 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    transition: box-shadow 0.3s; /* 호버 시 그림자 효과 */
+}
+
+.listItem:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 효과 */
+}
+
+.itemContent {
+    flex-grow: 1; /* 내용이 가능한 공간을 차지하도록 설정 */
+    margin-left: 15px; /* 이미지와 내용 간의 간격 */
+}
+
+.thumbnail {
+    width: 300px; /* 이미지 크기 조정 */
+    height: auto; /* 이미지 크기 조정 */
+    border-radius: 5px; /* 이미지 모서리 둥글게 */
+}
